@@ -10,25 +10,25 @@ export declare const offeringSchema: z.ZodObject<{
     created_at: z.ZodOptional<z.ZodNumber>;
     updated_at: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
-    isActive: boolean;
-    testUrl: string;
-    vendorId: string;
-    testId: string;
-    priceCents: number;
-    created_at?: number | undefined;
-    updated_at?: number | undefined;
-    notes?: string | null | undefined;
-    vendorTestName?: string | null | undefined;
+    created_at?: number;
+    updated_at?: number;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }, {
-    testUrl: string;
-    vendorId: string;
-    testId: string;
-    priceCents: number;
-    created_at?: number | undefined;
-    updated_at?: number | undefined;
-    notes?: string | null | undefined;
-    isActive?: boolean | undefined;
-    vendorTestName?: string | null | undefined;
+    created_at?: number;
+    updated_at?: number;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }>;
 export type Offering = z.infer<typeof offeringSchema>;
 export declare const offeringPatchSchema: z.ZodEffects<z.ZodObject<{
@@ -40,37 +40,37 @@ export declare const offeringPatchSchema: z.ZodEffects<z.ZodObject<{
     vendorTestName: z.ZodOptional<z.ZodOptional<z.ZodNullable<z.ZodString>>>;
     priceCents: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
-    notes?: string | null | undefined;
-    isActive?: boolean | undefined;
-    testUrl?: string | undefined;
-    vendorId?: string | undefined;
-    testId?: string | undefined;
-    vendorTestName?: string | null | undefined;
-    priceCents?: number | undefined;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }, {
-    notes?: string | null | undefined;
-    isActive?: boolean | undefined;
-    testUrl?: string | undefined;
-    vendorId?: string | undefined;
-    testId?: string | undefined;
-    vendorTestName?: string | null | undefined;
-    priceCents?: number | undefined;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }>, {
-    notes?: string | null | undefined;
-    isActive?: boolean | undefined;
-    testUrl?: string | undefined;
-    vendorId?: string | undefined;
-    testId?: string | undefined;
-    vendorTestName?: string | null | undefined;
-    priceCents?: number | undefined;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }, {
-    notes?: string | null | undefined;
-    isActive?: boolean | undefined;
-    testUrl?: string | undefined;
-    vendorId?: string | undefined;
-    testId?: string | undefined;
-    vendorTestName?: string | null | undefined;
-    priceCents?: number | undefined;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }>;
 export declare const offeringInsertSchema: z.ZodObject<{
     notes: z.ZodOptional<z.ZodNullable<z.ZodString>>;
@@ -81,21 +81,21 @@ export declare const offeringInsertSchema: z.ZodObject<{
     vendorTestName: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     priceCents: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
-    testUrl: string;
-    vendorId: string;
-    testId: string;
-    priceCents: number;
-    notes?: string | null | undefined;
-    isActive?: boolean | undefined;
-    vendorTestName?: string | null | undefined;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }, {
-    testUrl: string;
-    vendorId: string;
-    testId: string;
-    priceCents: number;
-    notes?: string | null | undefined;
-    isActive?: boolean | undefined;
-    vendorTestName?: string | null | undefined;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }>;
 export type OfferingInsert = z.infer<typeof offeringInsertSchema>;
 export declare const offeringArraySchema: z.ZodArray<z.ZodObject<{
@@ -109,25 +109,25 @@ export declare const offeringArraySchema: z.ZodArray<z.ZodObject<{
     created_at: z.ZodOptional<z.ZodNumber>;
     updated_at: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
-    isActive: boolean;
-    testUrl: string;
-    vendorId: string;
-    testId: string;
-    priceCents: number;
-    created_at?: number | undefined;
-    updated_at?: number | undefined;
-    notes?: string | null | undefined;
-    vendorTestName?: string | null | undefined;
+    created_at?: number;
+    updated_at?: number;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }, {
-    testUrl: string;
-    vendorId: string;
-    testId: string;
-    priceCents: number;
-    created_at?: number | undefined;
-    updated_at?: number | undefined;
-    notes?: string | null | undefined;
-    isActive?: boolean | undefined;
-    vendorTestName?: string | null | undefined;
+    created_at?: number;
+    updated_at?: number;
+    notes?: string;
+    isActive?: boolean;
+    testUrl?: string;
+    vendorId?: string;
+    testId?: string;
+    vendorTestName?: string;
+    priceCents?: number;
 }>, "many">;
 /** GET /offerings?… */
 export declare const offeringListQuerySchema: z.ZodObject<{
@@ -137,17 +137,17 @@ export declare const offeringListQuerySchema: z.ZodObject<{
     limit: z.ZodOptional<z.ZodNumber>;
     offset: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
-    vendorId?: string | undefined;
-    testId?: string | undefined;
-    q?: string | undefined;
-    limit?: number | undefined;
-    offset?: number | undefined;
+    vendorId?: string;
+    testId?: string;
+    q?: string;
+    limit?: number;
+    offset?: number;
 }, {
-    vendorId?: string | undefined;
-    testId?: string | undefined;
-    q?: string | undefined;
-    limit?: number | undefined;
-    offset?: number | undefined;
+    vendorId?: string;
+    testId?: string;
+    q?: string;
+    limit?: number;
+    offset?: number;
 }>;
 /** GET /offerings/exists?vendorId=...&(testId|testhandle)=... */
 export declare const offeringExistsQuerySchema: z.ZodEffects<z.ZodObject<{
@@ -155,37 +155,37 @@ export declare const offeringExistsQuerySchema: z.ZodEffects<z.ZodObject<{
     testId: z.ZodOptional<z.ZodString>;
     testhandle: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
-    vendorId: string;
-    testhandle?: string | undefined;
-    testId?: string | undefined;
+    testhandle?: string;
+    vendorId?: string;
+    testId?: string;
 }, {
-    vendorId: string;
-    testhandle?: string | undefined;
-    testId?: string | undefined;
+    testhandle?: string;
+    vendorId?: string;
+    testId?: string;
 }>, {
-    vendorId: string;
-    testhandle?: string | undefined;
-    testId?: string | undefined;
+    testhandle?: string;
+    vendorId?: string;
+    testId?: string;
 }, {
-    vendorId: string;
-    testhandle?: string | undefined;
-    testId?: string | undefined;
+    testhandle?: string;
+    vendorId?: string;
+    testId?: string;
 }>;
 /** GET /offerings/vendors/missing?(testId|testhandle)=... */
 export declare const vendorsMissingQuerySchema: z.ZodEffects<z.ZodObject<{
     testId: z.ZodOptional<z.ZodString>;
     testhandle: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
-    testhandle?: string | undefined;
-    testId?: string | undefined;
+    testhandle?: string;
+    testId?: string;
 }, {
-    testhandle?: string | undefined;
-    testId?: string | undefined;
+    testhandle?: string;
+    testId?: string;
 }>, {
-    testhandle?: string | undefined;
-    testId?: string | undefined;
+    testhandle?: string;
+    testId?: string;
 }, {
-    testhandle?: string | undefined;
-    testId?: string | undefined;
+    testhandle?: string;
+    testId?: string;
 }>;
 //# sourceMappingURL=offerings.d.ts.map

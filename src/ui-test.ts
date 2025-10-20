@@ -1,3 +1,4 @@
+import {type Offering} from "./offerings";
 // primitives
 export type GID = `gid://${string}`;
 export type UrlString = `http${string}` | `https${string}`;
@@ -14,26 +15,11 @@ export interface TestImage {
 
 export interface PricingVariant {
   id: GID | string;
-  price: string | number;                // Shopify often sends string
+  price: string | number;
   title: string;
   compareAtPrice?: string | number | null;
 }
 
-export interface Offering {
-  id: string;                            // uuid
-  testHandle: string;
-  vendorId: string;                      // "ubertests.com"
-  testId: string;
-  vendorTestName: string;
-  testUrl: UrlString | string;
-  priceCents: MoneyCents;
-  isActive: boolean;
-  notes: string | null;
-  tags: string[];                        // normalized
-  categories: string[];                  // normalized
-  created_at: number;                    // epoch seconds
-  updated_at: number;                    // epoch seconds
-}
 
 // ---------- SINGLE APP TYPE (normalized) ----------
 export interface UiTest {
