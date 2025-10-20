@@ -3,4 +3,3 @@ export type ApiError = {
     code?: number;
 };
 export type ApiOk<T> = T;
-//# sourceMappingURL=http.d.ts.map

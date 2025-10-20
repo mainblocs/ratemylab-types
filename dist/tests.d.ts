@@ -89,13 +89,13 @@ export declare const testSchema: z.ZodObject<{
     currency_code: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     pricing_json: z.ZodOptional<z.ZodNullable<z.ZodString>>;
 }, "strip", z.ZodTypeAny, {
-    status?: string;
-    description?: string;
-    vendor?: string;
     id?: string;
+    title?: string;
+    description?: string;
+    status?: string;
+    vendor?: string;
     handle?: string;
     testhandle?: string;
-    title?: string;
     body_html?: string;
     product_type?: string;
     tags?: string;
@@ -144,13 +144,13 @@ export declare const testSchema: z.ZodObject<{
     currency_code?: string;
     pricing_json?: string;
 }, {
-    status?: string;
-    description?: string;
-    vendor?: string;
     id?: string;
+    title?: string;
+    description?: string;
+    status?: string;
+    vendor?: string;
     handle?: string;
     testhandle?: string;
-    title?: string;
     body_html?: string;
     product_type?: string;
     tags?: string;
@@ -256,13 +256,13 @@ export declare const testPatchSchema: z.ZodObject<{
     currency_code: z.ZodOptional<z.ZodOptional<z.ZodNullable<z.ZodString>>>;
     pricing_json: z.ZodOptional<z.ZodOptional<z.ZodNullable<z.ZodString>>>;
 }, "strip", z.ZodTypeAny, {
-    status?: string;
-    description?: string;
-    vendor?: string;
     id?: string;
+    title?: string;
+    description?: string;
+    status?: string;
+    vendor?: string;
     handle?: string;
     testhandle?: string;
-    title?: string;
     body_html?: string;
     product_type?: string;
     tags?: string;
@@ -311,13 +311,13 @@ export declare const testPatchSchema: z.ZodObject<{
     currency_code?: string;
     pricing_json?: string;
 }, {
-    status?: string;
-    description?: string;
-    vendor?: string;
     id?: string;
+    title?: string;
+    description?: string;
+    status?: string;
+    vendor?: string;
     handle?: string;
     testhandle?: string;
-    title?: string;
     body_html?: string;
     product_type?: string;
     tags?: string;
@@ -366,4 +366,3 @@ export declare const testPatchSchema: z.ZodObject<{
     currency_code?: string;
     pricing_json?: string;
 }>;
-//# sourceMappingURL=tests.d.ts.map

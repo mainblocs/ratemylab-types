@@ -137,17 +137,17 @@ export declare const offeringListQuerySchema: z.ZodObject<{
     limit: z.ZodOptional<z.ZodNumber>;
     offset: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
+    offset?: number;
+    q?: string;
     vendorId?: string;
     testId?: string;
-    q?: string;
     limit?: number;
-    offset?: number;
 }, {
+    offset?: number;
+    q?: string;
     vendorId?: string;
     testId?: string;
-    q?: string;
     limit?: number;
-    offset?: number;
 }>;
 /** GET /offerings/exists?vendorId=...&(testId|testhandle)=... */
 export declare const offeringExistsQuerySchema: z.ZodEffects<z.ZodObject<{
@@ -188,4 +188,3 @@ export declare const vendorsMissingQuerySchema: z.ZodEffects<z.ZodObject<{
     testhandle?: string;
     testId?: string;
 }>;
-//# sourceMappingURL=offerings.d.ts.map

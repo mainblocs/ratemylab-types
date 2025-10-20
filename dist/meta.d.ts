@@ -23,4 +23,3 @@ export type RTRoot = {
 export type RTNode = RTText | RTParagraph | RTListItem | RTList | RTRoot | (Record<string, unknown> & {
     type?: string;
 });
-//# sourceMappingURL=meta.d.ts.map

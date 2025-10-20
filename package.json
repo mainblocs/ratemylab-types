@@ -1,6 +1,6 @@
 {
   "name": "@ratemylab/types",
-  "version": "2.6.0",
+  "version": "3.0.1",
   "private": false,
   "type": "module",
   "main": "./dist/index.js",
@@ -16,7 +16,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsc -b",
+    "build": "rimraf dist && tsc -p tsconfig.json",
     "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "devDependencies": {

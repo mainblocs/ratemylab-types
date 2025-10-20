@@ -29,20 +29,20 @@ export declare const vendorSchema: z.ZodObject<{
     created_at: z.ZodOptional<z.ZodNumber>;
     updated_at: z.ZodOptional<z.ZodNumber>;
 }, "strip", z.ZodTypeAny, {
+    currency?: string;
+    name?: string;
     id?: string;
+    target?: string;
     created_at?: number;
     updated_at?: number;
-    name?: string;
     businessName?: string;
     websiteUrl?: string;
     logoUrl?: string;
     priceSelector?: string;
-    target?: string;
     selector?: string;
     priceAttr?: string;
     priceRegex?: string;
     searchUrl?: string;
-    currency?: string;
     drawFeeCents?: number;
     requisitionFeeCents?: number;
     serviceFeeCents?: number;
@@ -52,20 +52,20 @@ export declare const vendorSchema: z.ZodObject<{
     notes?: string;
     isActive?: boolean;
 }, {
+    currency?: string;
+    name?: string;
     id?: string;
+    target?: string;
     created_at?: number;
     updated_at?: number;
-    name?: string;
     businessName?: string;
     websiteUrl?: string;
     logoUrl?: string;
     priceSelector?: string;
-    target?: string;
     selector?: string;
     priceAttr?: string;
     priceRegex?: string;
     searchUrl?: string;
-    currency?: string;
     drawFeeCents?: number;
     requisitionFeeCents?: number;
     serviceFeeCents?: number;
@@ -104,20 +104,20 @@ export declare const vendorPatchSchema: z.ZodObject<{
     created_at: z.ZodOptional<z.ZodOptional<z.ZodNumber>>;
     updated_at: z.ZodOptional<z.ZodOptional<z.ZodNumber>>;
 }, "strip", z.ZodTypeAny, {
+    currency?: string;
+    name?: string;
     id?: string;
+    target?: string;
     created_at?: number;
     updated_at?: number;
-    name?: string;
     businessName?: string;
     websiteUrl?: string;
     logoUrl?: string;
     priceSelector?: string;
-    target?: string;
     selector?: string;
     priceAttr?: string;
     priceRegex?: string;
     searchUrl?: string;
-    currency?: string;
     drawFeeCents?: number;
     requisitionFeeCents?: number;
     serviceFeeCents?: number;
@@ -127,20 +127,20 @@ export declare const vendorPatchSchema: z.ZodObject<{
     notes?: string;
     isActive?: boolean;
 }, {
+    currency?: string;
+    name?: string;
     id?: string;
+    target?: string;
     created_at?: number;
     updated_at?: number;
-    name?: string;
     businessName?: string;
     websiteUrl?: string;
     logoUrl?: string;
     priceSelector?: string;
-    target?: string;
     selector?: string;
     priceAttr?: string;
     priceRegex?: string;
     searchUrl?: string;
-    currency?: string;
     drawFeeCents?: number;
     requisitionFeeCents?: number;
     serviceFeeCents?: number;
@@ -156,17 +156,17 @@ export declare const vendorPatchSchema: z.ZodObject<{
  * - Keep same defaults for server-side fill.
  */
 export declare const vendorInsertSchema: z.ZodObject<{
+    currency: z.ZodOptional<z.ZodDefault<z.ZodString>>;
     name: z.ZodString;
+    target: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     businessName: z.ZodString;
     websiteUrl: z.ZodString;
     logoUrl: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     priceSelector: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    target: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     selector: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     priceAttr: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     priceRegex: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     searchUrl: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    currency: z.ZodOptional<z.ZodDefault<z.ZodString>>;
     drawFeeCents: z.ZodOptional<z.ZodDefault<z.ZodNumber>>;
     requisitionFeeCents: z.ZodOptional<z.ZodDefault<z.ZodNumber>>;
     serviceFeeCents: z.ZodOptional<z.ZodDefault<z.ZodNumber>>;
@@ -176,17 +176,17 @@ export declare const vendorInsertSchema: z.ZodObject<{
     notes: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     isActive: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
 }, "strip", z.ZodTypeAny, {
+    currency?: string;
     name?: string;
+    target?: string;
     businessName?: string;
     websiteUrl?: string;
     logoUrl?: string;
     priceSelector?: string;
-    target?: string;
     selector?: string;
     priceAttr?: string;
     priceRegex?: string;
     searchUrl?: string;
-    currency?: string;
     drawFeeCents?: number;
     requisitionFeeCents?: number;
     serviceFeeCents?: number;
@@ -196,17 +196,17 @@ export declare const vendorInsertSchema: z.ZodObject<{
     notes?: string;
     isActive?: boolean;
 }, {
+    currency?: string;
     name?: string;
+    target?: string;
     businessName?: string;
     websiteUrl?: string;
     logoUrl?: string;
     priceSelector?: string;
-    target?: string;
     selector?: string;
     priceAttr?: string;
     priceRegex?: string;
     searchUrl?: string;
-    currency?: string;
     drawFeeCents?: number;
     requisitionFeeCents?: number;
     serviceFeeCents?: number;
@@ -217,4 +217,3 @@ export declare const vendorInsertSchema: z.ZodObject<{
     isActive?: boolean;
 }>;
 export type VendorInsert = z.infer<typeof vendorInsertSchema>;
-//# sourceMappingURL=vendors.d.ts.map

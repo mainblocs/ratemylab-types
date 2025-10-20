@@ -62,4 +62,3 @@ export interface UiTest {
     pricing_json: PricingVariant[];
     offerings: Offering[];
 }
-//# sourceMappingURL=ui-test.d.ts.map
